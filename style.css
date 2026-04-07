@@ -62,5 +62,5 @@ button:hover {
   left: 30px;
   width: 300px; /* gedein dari 120 jadi 200 */
   z-index: 999;
-  filter: drop-shadow(0 0 8px rgba(0,0,0,0.8));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
 }
