@@ -60,7 +60,7 @@ button:hover {
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 250px;
+  width: 200px; /* gedein dari 120 jadi 200 */
   z-index: 999;
   filter: drop-shadow(0 0 8px rgba(0,0,0,0.8));
 }
