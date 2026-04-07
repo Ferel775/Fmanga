@@ -59,8 +59,8 @@ button:hover {
 .logo {
   position: fixed;
   top: 20px;
-  left: 15px;
-  width: 200px;
+  left: 20px;
+  width: 250px;
   z-index: 999;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.8));
 }
