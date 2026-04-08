@@ -1,0 +1,140 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* TOPBAR */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 15px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+
+  z-index: 9999;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* SEARCH */
+.search-box {
+  width: 110px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* MENU BUTTON (FIX + BESAR) */
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+
+  width: 250px;
+  height: 100%;
+
+  background: rgba(0,0,0,0.95);
+  padding-top: 70px;
+
+  transition: 0.3s;
+  z-index: 9998;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar a:hover {
+  background: #ff3c3c;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+/* HEADER */
+header {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* CONTENT */
+main {
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  margin: 50px auto;
+  padding: 20px;
+  width: 300px;
+
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff3c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff1f1f;
+}
