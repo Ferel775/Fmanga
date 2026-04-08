@@ -1,0 +1,114 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Konten full layar */
+main {
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  text-align: center;
+}
+
+/* CARD */
+.card {
+  margin: 50px auto;
+  padding: 20px;
+  width: 300px;
+
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff3c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff1f1f;
+}
+
+/* LOGO (FIX BANGET) */
+.logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  width: 140px;
+
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+
+  font-size: 30px;
+  cursor: pointer;
+
+  z-index: 9999;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+
+  width: 250px;
+  height: 100%;
+
+  background: rgba(0,0,0,0.95);
+  padding-top: 60px;
+
+  transition: 0.3s;
+  z-index: 9998;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar a:hover {
+  background: #ff3c3c;
+}
+
+.sidebar.active {
+  right: 0;
+}
