@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("bg.jpg");
+
+  background-size: cover;      /* FULL layar */
+  background-position: center; /* posisi tengah */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* biar ga geser aneh */
+}
+
+/* Biar konten minimal setinggi layar */
+main {
+  min-height: 100vh;
+}
+
+/* Header & card semi transparan */
+header {
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  text-align: center;
+}
+
+.card {
+  margin: 50px auto;
+  padding: 20px;
+  width: 300px;
+
+  background: rgba(0,0,0,0.7); /* jangan solid, biar bg keliatan */
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Button biar ga keliatan kayak tombol tahun 2008 */
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff3c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff1f1f;
+}
+
+.logo {
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+
+  width: 12vw;
+  max-width: 220px;
+  min-width: 120px;
+
+  z-index: 9999;
+  pointer-events: none;
+
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.8));
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .logo {
+    width: 25vw;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+/* Desktop gede */
+@media (min-width: 1200px) {
+  .logo {
+    width: 180px;
+  }
+}
+
+/* tombol garis 3 */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* awalnya disembunyiin */
+  width: 250px;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 9998;
+}
+
+/* link menu */
+.sidebar a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+/* hover */
+.sidebar a:hover {
+  background: #ff3c3c;
+}
+
+/* kondisi aktif */
+.sidebar.active {
+  right: 0;
+}
